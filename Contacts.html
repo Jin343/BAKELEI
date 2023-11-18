@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BAKELEI</title>
+    <link rel="stylesheet" href="T10.css">
+    <script src="https://kit.fontawesome.com/73d5e9ffaa.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo&family=Montserrat:wght@100;300;400;500;600;700&family=Playfair+Display:ital@0;1&family=Roboto+Slab&display=swap"
+        rel="stylesheet">
+    <style>
+        .contacts{
+            padding:60px 0;
+        }
+         .mean-h3{
+            font-weight: 700;
+            font-size: 38px;
+        }
+        .contacts form{
+            width: 70%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .contacts form input,.contacts form textarea{
+            width: 100%;
+            outline: none;
+            border:1px solid gainsboro;
+            border-radius: 10px;
+            background-color: white;
+            text-transform: capitalize;
+            font-size: 13px;
+            padding:15px 20px;
+            margin:7px 0;
+            font-family: Montserrat, sans-serif;
+        }
+        .contacts form input::placeholder,.contacts form textarea::placeholder{
+            color: black;
+        }
+        .contacts form button{
+            font-size: 14px;
+            padding: 10px 45px
+        }
+        .map{
+            display: flex;
+            align-items: center;
+        }
+        .map iframe{
+            height: 300px;
+        }
+        .map div {
+            padding:10px 20px ;
+        }
+        .map div div{
+            display: flex;
+            justify-content: center;
+            align-items: start;
+        }
+        .map div i{
+            font-size: 20px;
+            color: var(--light-pink);
+            padding:10px 0;
+            padding-right: 15px;
+        }
+        @media (max-width:1039px){
+            .mean-h3{
+                font-size: 30px;
+            }
+            .contacts form input{
+            font-size: 12px;
+            padding:13px 20px;
+            margin:5px 0;
+        }
+        .contacts form button{
+            font-size: 11px;
+            padding: 10px 30px;
+        }
+            .map iframe{
+            height: 200px;
+            width: 60%;
+        }
+            .map div{
+            padding:7px 15px;
+        }
+        }
+        form div{
+            width: 100%;
+            position: relative;
+        }
+         .notFilled{
+            border-color:red !important;
+        }
+        input + span{
+            display: none;
+            position: absolute;
+            top:15px;
+            right:10px;
+            font-size: 10px;
+            font-style: italic;
+            color: rgb(200, 0, 0);
+        }
+        .notFilled + span{
+            display: block;
+        }
+        @media (max-width:767px){
+            .contacts form{
+                width: 100%;
+            }
+            .map div{
+                margin: 0 auto;
+            }
+            .map div i{
+                font-size: 20px;
+                padding:7px;
+                padding-right: 15px;
+            }
+            .contacts form button{
+            font-size: 10px;
+        }
+            .map{
+               align-items: start;
+                flex-direction: column;
+            }
+            .map iframe{
+                width: 95%;
+                margin: 0 auto;
+            }
+            .map .basic-text{
+                font-size: 16px !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="pictureContainer">
+        <div class="content">
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+    </div>
+    <header>
+        <div class="container">
+            <div class="line">
+                <div class="icons">
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-x-twitter"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+                <div class="links">
+                    <a href="T10.html" class="basic-text changableLinkColor" style="color:var(--light-pink)">home</a>
+                    <a href="Collection.html" class="basic-text changableLinkColor">Collection</a>
+                    <a href="Catalog.html" class="basic-text changableLinkColor">Catalog</a>
+                    <a href="Sale.html" class="basic-text changableLinkColor">sale</a>
+                    <a href="blog.html" class="basic-text changableLinkColor">blog</a>
+                    <a href="Contacts.html" class="basic-text changableLinkColor">Contacts</a>
+                </div>
+            </div>
+            <div class="line">
+                <h3 class="logo">BAKE<span>LEI</span></h3>
+            </div>
+            <div class="line">
+                <p class="basic-text">ORDER ONLINE OR CALL US (123) 456-7890</p>
+                <div class="lower">
+                    <div class="searchbar">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text">
+                    </div>
+                    <div class="cart">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="section">
+        <div class="items-container">
+            <a class="changableLinkColor basic-text" href="T10.html">Home</a>
+            <span  class="basic-text">></span>
+            <p class="basic-text">Contacts</p>
+        </div>
+    </div>
+<div class="contacts">
+    <div class="items-container">
+        <div class="mean-text">
+            <h3 class="mean-h3">Contacts</h3>
+        </div>
+        <form action="">
+            <div><input required type="text" placeholder="first name*"><span>Field is required</span></div>
+            <div><input required type="email" placeholder="Email*"><span>Field is required</span></div>
+            <div><input required type="text" placeholder="phone*"><span>Field is required</span></div>
+            <textarea placeholder="Question/Comments" name="" id="" cols="20" rows="5"></textarea>
+            <button class="common-button reversed-button">send</button>
+        </form>
+    </div>
+</div>
+<div class="map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3131.44841733178!2d-122.2867373!3d38.2922772!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80850669effa888b%3A0xc5b4d92187afc27e!2sRandolph%20St%2C%20Napa%2C%20CA%2094559%2C%20USA!5e0!3m2!1sen!2s!4v1700232190669!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <div>
+        <div class="el basic-text"><i class="fa-solid fa-location-dot"></i>707 Randolph Street
+           <br> Napa, CA 94559</div>
+            <div class="el basic-text"><i class="fa-regular fa-clock"></i>Office Hours
+          <br>M-F 8:30am-5:00pm</div>
+        <div class="el basic-text"><i class="fa-solid fa-phone"></i>P: <span class="changableLinkColor basic-text">123.456.7890</span> <br>
+        <span class="changableLinkColor basic-text">F: 123.456.7891</span></div>
+    </div>
+</div>
+    <footer>
+    <div class="container">
+        <div class="line">
+            <em class="mean-h3">Receive news right on your email</em>
+            <form action="">
+                <input class="basic-text" type="text" placeholder="Enter your e-mail here*">
+                <button class="reversed-button common-button">subscribe</button>
+            </form>
+        </div>
+    <div class="line">
+        <h3 class="logo">BAKE<span>LEI</span></h3>
+        <div class="icons">
+            <button class="common-button"><i class="fa-brands fa-instagram"></i></button>
+            <button class="common-button"><i class="fa-brands fa-facebook-f"></i></button>
+            <button class="common-button"><i class="fa-brands fa-x-twitter"></i></button>
+            <button class="common-button"><i class="fa-brands fa-youtube"></i></button>
+        </div>
+    </div>
+    <div class="line">
+        <em class="mean-h3">Contacts</em>
+        <div><i class="fa-solid fa-location-dot"></i>707 Randolph Street
+            Napa, CA 94559</div>
+        <div><i class="fa-solid fa-phone"></i>P: 123.456.7890
+            F: 123.456.7891</div>
+    </div>
+    </div>
+    <p>Copyright © 2023 JIN. All Rights Reserved.</p>
+    </footer>
+    </body>
+    <script src="T10.js"></script>
+    <script>
+        let inputs =document.querySelectorAll("input")
+        let button=document.querySelector("form button")
+        inputs.forEach((input)=>{
+            button.addEventListener("click",()=>{
+                if (input.value.length === 0) {
+         button.disabled = false;
+        input.classList.add("notFilled")
+        console.log(9)
+        }else{
+           button.disabled = true;
+            input.classList.remove("notFilled")
+    }})})
+    </script>
+    </html>
