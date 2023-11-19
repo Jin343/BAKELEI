@@ -25,6 +25,7 @@
         font-size: 18px !important;
         font-weight: lighter !important;
     }
+
    .item:nth-child(3)  .pic{
         background-image: url("https://template223295.motopreview.com/mt-demo/223200/223295/mt-content/uploads/2021/10/mt-2266-blog-img6.jpg");
     }
@@ -47,11 +48,21 @@
     height: 220px;
 }
 }
+@media (max-width:767px){
+    #blog .item{
+        gap:20px
+    }
+    #blog .item .pic{
+        width: 90% !important;
+margin: 0 auto;
+    }
+}
 @media (min-width:650px){
     .items-content{
         padding:10px 0;
     }
     #blog .item .text{
+        padding:0;
         width: 45% !important;
     }
     #blog .item{
