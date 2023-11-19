@@ -15,7 +15,9 @@ body {
     background-color: white;
     color: black;
 }
-
+a{
+    color:black
+}
 img {
     max-width: 100%;
 }
@@ -87,7 +89,7 @@ a {
     color: black;
     text-decoration: none;
 }
-.fa-bars{
+i.fa-bars{
     display: none;
 }
 header {
@@ -98,22 +100,23 @@ header {
     background-color: white;
     padding: 20px 0;
 }
-
 @media (max-width:767px) {
     header {
         position: relative;
     }
 }
 
+header ul{
+    margin: 0;
+    padding: 0;
+}
 header .container {
     width: 95%;
     margin: 0 auto;
     display: flex;
     justify-content:space-between ;
 }
-header .links i,header ul a{
-    font-size:13px;
-}
+
 header .container .icons {
     font-size: 13px;
     padding-bottom: 25px;
@@ -350,7 +353,9 @@ header .container .cart::before {
     header .container {
         flex-direction: column;
     }
-
+    header .container i{
+        font-size: 13px;
+    }
     header .container .line:not(:last-child) {
         padding-bottom: 15px;
     }
@@ -368,7 +373,7 @@ header .container .cart::before {
 
     header .container .line ul {
         transform: translateX(15%);
-/*         display: none; */
+        display: none;
         padding: 20px 35px ;
         flex-direction: column;
         height: 200px;
@@ -713,7 +718,7 @@ header .container .cart i {
     }
 
     .container-fluid .flipper-container {
-        padding: 10px 100px;
+        padding: 10px 25px;
         margin: 0 auto;
     }
 }
@@ -944,7 +949,7 @@ justify-content: start;
     gap: 50px;
 }
 #blog .item i{
-    padding-right: 10px;
+    padding-right:5px;
     color: var(--light-pink);
 }
 #blog .item:nth-child(even) {
@@ -961,6 +966,7 @@ justify-content: start;
     align-items: start;
 }
 #blog .item .text h3 + p{
+    font-size: 14px !important;
     color:var(--light-pink)
 }
 #blog .item .text .basic-text {
