@@ -448,7 +448,7 @@ header .container .cart i {
     background-repeat: no-repeat;
 }
 
-@media (max-width:800px) {
+@media (max-width:1039px) {
     .landing {
         height: 270px;
     }
