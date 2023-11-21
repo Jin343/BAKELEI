@@ -397,7 +397,7 @@ header .container .cart::before {
         border-bottom: 1px solid #ec4787;
         padding-bottom: 15px;
     }
-    header .container .links:hover ul,
+    /* header .container .links:hover ul, */
     .clickedList ul{
         padding-top:20px !important;
         height: 185px !important;
