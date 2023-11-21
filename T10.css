@@ -118,6 +118,7 @@ header .container {
 }
 
 header .container .icons {
+    display: flex;
     font-size: 13px;
     padding-bottom: 25px;
     gap:10px;
@@ -247,12 +248,6 @@ header .container .line p {
     header .lower .searchbar {
         padding: 5px 10px;
         font-size: 12px;
-    }
-
-    header .container .icons {
-        display: flex;
-        gap:10px;
-        padding-bottom: 10px;
     }
 
     header i {
