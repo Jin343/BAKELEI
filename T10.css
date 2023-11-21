@@ -481,15 +481,14 @@ header .container .cart i {
     }
     .landing .container .text .basic-text{
         font-size: 13px;
-        width: 70%;
     }
 }
 
 @media (max-width:767px) {   
  .landing .container .text h3 {
         font-size: 35px;
-}  .landing .container .text {
-        width: 70%;
+}  .landing .container .text .basic-text {
+        width: 90%;
     }
     .landing {
         background-position: 35%;
