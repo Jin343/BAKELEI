@@ -120,10 +120,7 @@ header .container {
 header .container .icons {
     font-size: 13px;
     padding-bottom: 25px;
-}
-
-header .container .icons i:not(:last-child) {
-    padding-right: 10px;
+    gap:10px;
 }
 
 header .container i {
@@ -399,7 +396,8 @@ header .container .cart::before {
         border-bottom: 1px solid #ec4787;
         padding-bottom: 15px;
     }
-    header .container .links:hover ul {
+    header .container .links:hover ul,
+    .clickedList ul{
         padding-top:20px;
         height: 185px;
     }
