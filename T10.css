@@ -478,7 +478,9 @@ header .container .cart i {
 @media (max-width:800px) {   
  .landing .container .text h3 {
         font-size: 35px;
-}
+}  .landing .container .text {
+        width: 70%;
+    }
     .landing {
         background-position: 35%;
     }
@@ -487,9 +489,6 @@ header .container .cart i {
 @media (max-width:767px) {
     .landing .container .text h3 {
         font-size: 25px;
-    }
-    .landing .container .text {
-        width: 100%;
     }
 }
 
