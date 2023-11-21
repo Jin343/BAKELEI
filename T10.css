@@ -481,7 +481,8 @@ header .container .cart i {
 @media (max-width:800px) {   
  .landing .container .text h3 {
         font-size: 35px;
-}  .landing .container .text {
+}  
+     .landing .container .text p{
         width: 70%;
     }
     .landing {
