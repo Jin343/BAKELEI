@@ -8,9 +8,9 @@ window.addEventListener("scroll", () => {
     }
 })
 let list =document.querySelector("header .container .links")
-let button = document.querySelector("header .container i")
+let button = document.querySelector("header .container .links i")
 let isClicked =false
-list.addEventListener("clicked",()=>{
+list.addEventListener("click",()=>{
     if (isClicked === false){
     button.style.color="var(--light-pink)"
     list.classList.add("clickedList")
