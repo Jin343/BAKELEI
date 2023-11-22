@@ -486,7 +486,9 @@ header .container .cart i {
         width: 90%;
     }
     .landing {
-        background-position: 35%;
+/*         background-position: 35%; */
+    background-position: center;
+        
     }
 }
 
