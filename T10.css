@@ -130,7 +130,7 @@ header .container i {
 
 header .container i:hover {
     color: var(--light-pink)
-}
+} 
 
 .changableLinkColor {
     font-weight: 400;
@@ -248,6 +248,10 @@ header .container .line p {
     header .lower .searchbar {
         padding: 5px 10px;
         font-size: 12px;
+    }
+
+    header .container .icons {
+        padding-bottom: 10px;
     }
 
     header i {
@@ -486,9 +490,7 @@ header .container .cart i {
         width: 90%;
     }
     .landing {
-/*         background-position: 35%; */
-    background-position: center;
-        
+        /* background-position: 35%; */
     }
 }
 
